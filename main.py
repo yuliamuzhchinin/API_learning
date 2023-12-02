@@ -1,9 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
 import os
 import openai
 import tiktoken
@@ -21,10 +15,6 @@ def get_completion_from_messages(prompt, model = "gpt-3.5-turbo", temperature = 
     )
     return response.choices[0].message["content"]
 
-
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     messages = [
         {'role': 'system',
@@ -37,4 +27,3 @@ if __name__ == '__main__':
     response = get_completion_from_messages(messages)
     print(response)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
